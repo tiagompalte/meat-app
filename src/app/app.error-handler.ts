@@ -6,10 +6,10 @@ export class ErrorHandler {
         let errorMessage: string
 
         if(error instanceof Response) {
-            errorMessage = `Erro ${error.status} ao acessaar a URL ${error.url} - ${error.statusText}`
+            errorMessage = `Erro ${error.status} ao acessar a URL ${error.url} - ${error.statusText}`
         } else {
             errorMessage = error.toString()
-        }  
+        }
         console.log(errorMessage)
         return Observable.throw(errorMessage);
     }
