@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RestaurantsService } from '../../restaurants/restaurants.service';
 import { ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { MenuItem } from '../menu-item/menu-item.model';
 
 @Component({
@@ -19,7 +19,7 @@ export class MenuComponent implements OnInit {
   }
 
   addMenuItem(item: MenuItem) {
-    
+
   }
 
 }
